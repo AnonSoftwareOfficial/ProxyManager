@@ -426,12 +426,12 @@ namespace proxyTest
         }
 
 
-        public static void proxyListSetup()
+        public static void proxyListSetup(string proxylistURL)
         {
             WebClient cli = new WebClient();
 
             //string proxieListStr = cli.DownloadString("http://rebro.weebly.com/uploads/2/7/3/7/27378307/rebroproxy-1000-113421072014.txt");
-            string proxieListStr = cli.DownloadString("http://vps.anongaming.com/log/proxies.txt");
+            string proxieListStr = cli.DownloadString(proxylistURL);
 
             proxDataList.Clear();
             string[] splitProx = proxieListStr.Split('\n');
