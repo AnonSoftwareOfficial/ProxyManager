@@ -69,7 +69,7 @@ namespace proxyTest
             {
                 print("Pass number: " + i);
                 List<String> prox = ProxyData.getProxyList();
-                ProxyManager pm = new ProxyManager(prox, "http://www.strawpoll.me/14185608");
+                ProxyManager pm = new ProxyManager(prox, "");
 
                 pm.registerEvent(eventYeh);
                 pm.registerEventFinish(ProxyFinish);
